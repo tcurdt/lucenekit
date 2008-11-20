@@ -64,7 +64,7 @@ char _dig_vec[] =
  */
 - (long long) longLongValue
 {  
-	char *p = (char *)[self cString];
+	char *p = (char *)[self cStringUsingEncoding:NSASCIIStringEncoding];
 	long long val, new_val = 0LL;
 	int minus = 1;
 	if (*p++ == '-')

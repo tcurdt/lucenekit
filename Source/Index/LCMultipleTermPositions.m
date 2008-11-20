@@ -1,5 +1,6 @@
 #include "LCMultipleTermPositions.h"
 #include "LCPriorityQueue.h"
+#include "GNUstep.h"
 
 /**
 * Describe class <code>MultipleTermPositions</code> here.

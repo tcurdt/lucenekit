@@ -1,12 +1,6 @@
 #include "LCWildcardTermEnum.h"
 #include "LCIndexReader.h"
 #include "GNUstep.h"
-#ifdef USE_PCREParser
-#include <PCREParser/PCREParser.h>
-#else
-#include <OgreKit/OgreKit.h>
-#endif
-
 
 static void replaceInString(NSMutableString* string, NSString* search, NSString* replace)
 {
@@ -88,7 +82,8 @@ static void replaceInString(NSMutableString* string, NSString* search, NSString*
 	NSMutableString *ms = [[NSMutableString alloc] initWithString: text];
         replaceInString(ms,@"*",@".*");
         replaceInString(ms,@"?",@".?");
-	
+
+/*	
 #ifdef USE_PCREParser
         regexp=[[PCREPattern alloc] initWithPattern:[NSString stringWithFormat: @"^%@$", ms]
                                     options:0];
@@ -96,7 +91,7 @@ static void replaceInString(NSMutableString* string, NSString* search, NSString*
 	ASSIGN(regexp, ([OGRegularExpression regularExpressionWithString: [NSString stringWithFormat: @"^%@$", ms]]));
 #endif
 	DESTROY(ms);
-	
+*/	
 	LCTerm *t = [[LCTerm alloc] initWithField: field text: @""];
 	LCTermEnumerator *e = [reader termEnumeratorWithTerm: t];
 	[self setEnumerator: e];
@@ -134,24 +129,9 @@ static void replaceInString(NSMutableString* string, NSString* search, NSString*
 	return endEnum;
 }
 
-/* Use OgreKit to match wildcard */
 - (BOOL) wildcardEqualsTo: (NSString *) t
 {
-#ifdef USE_PCREParser
-  NSRange r=[t rangeOfPattern:regexp
-               range:NSMakeRange(0,[t length])];
-  return (r.length>0 ? YES : NO);
-#else
-	OGRegularExpressionMatch *match;
-	if ((match = [regexp matchInString: t]))
-        {
-		return YES;
-	}
-	else
-	{
-		return NO;
-	}
-#endif
+    return NO;
 }
 
 - (void) close

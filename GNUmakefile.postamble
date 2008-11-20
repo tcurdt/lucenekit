@@ -31,9 +31,6 @@ before-all::
 	$(ECHO_NOTHING) \
 	echo "Build Project: $(PROJECT_DIR)"; \
 	echo ""; \
-	rm -f $(PROJECT_DIR)/OgreKit; \
-	$(LN_S) $(PROJECT_DIR)/../OgreKit/Headers $(PROJECT_DIR)/OgreKit; \
-	echo " Imported OgreKit dependency"; \
 	if [ "$(test)" = "yes" ]; then \
 	  rm -f $(PROJECT_DIR)/UnitKit; \
 	  $(LN_S) $(PROJECT_DIR)/../UnitKit/Source/FrameworkSource $(PROJECT_DIR)/UnitKit; \
@@ -47,8 +44,6 @@ after-all::
 after-clean::
 	$(ECHO_NOTHING) \
 	echo ""; \
-	rm -f $(PROJECT_DIR)/OgreKit; \
-	echo " Removed OgreKit dependency import"; \
 	if [ "$(test)" = "yes" ]; then \
 	  rm -f $(PROJECT_DIR)/UnitKit; \
 	fi; \
@@ -59,8 +54,6 @@ after-clean::
 after-distclean::
 	$(ECHO_NOTHING) \
 	echo ""; \
-	rm -f $(PROJECT_DIR)/OgreKit; \
-	echo " Removed OgreKit dependency import"; \
 	if [ "$(test)" = "yes" ]; then \
 	  rm -f $(PROJECT_DIR)/UnitKit; \
 	fi; \

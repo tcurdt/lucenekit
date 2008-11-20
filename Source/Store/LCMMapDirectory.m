@@ -105,13 +105,13 @@ static int MAX_BBUF = INT_MAX;
     NSFileHandle *file = [[NSFileHandle fileHandleForUpdatingAtPath: subpath]
 retain];
   
-    NS_DURING
+    //NS_DURING
             
         return ([file seekToEndOfFile] <= MAX_BBUF)
             ? (LCIndexInput *)[LCMMapIndexInput MMapIndexInputWithPath: subpath]
             : (LCIndexInput *)[LCMultiMMapIndexInput
                 MultiMMapIndexInputWithPath: subpath maxBufferSize: MAX_BBUF];
-    
+    /*
     NS_HANDLER 
   
     // FIXME: In Java, 'finally' statement is used here, we should support new
@@ -121,6 +121,7 @@ retain];
     return nil;
    
     NS_ENDHANDLER
+    */
 }
 
 @end
@@ -463,10 +464,11 @@ NSDefaultMallocZone());
         [(clone->buffers) addObject: bufferToCopy];
     }
     
-    NS_DURING
+    //NS_DURING
 
       [clone seekToFileOffset: [self offsetInFile]];
     
+    /*
     NS_HANDLER
         
         // FIXME: That's not really useful...
@@ -474,6 +476,7 @@ NSDefaultMallocZone());
         // RuntimeException(ioe); } [localException raise];
     
     NS_ENDHANDLER
+    */
    
     return clone;
  }

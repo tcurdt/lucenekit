@@ -2,7 +2,6 @@
 #include "LCWildcardTermEnum.h"
 #include "GNUstep.h"
 
-/* Use OgreKit for wildcard, which is caseless by default */
 /** Implements the wildcard search query. Supported wildcards are <code>*</code>, which
  * matches any character sequence (including the empty one), and <code>?</code>,
  * which matches any single character. Note this query can be slow, as it

@@ -337,38 +337,15 @@
 		64C9265608B78CCB00ACE251 /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C9250208B78CCB00ACE251 /* NSData+Additions.m */; };
 		64C9265708B78CCB00ACE251 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C9250308B78CCB00ACE251 /* NSString+Additions.m */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		9D73A6EC0ED39A8F004AEBB9 /* LCMetadataAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D73A6EB0ED39A8F004AEBB9 /* LCMetadataAttribute.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildStyle section */
-		014CEA440018CDF011CA2923 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		014CEA450018CDF011CA2923 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
 		604A35140999D6270082342D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* LuceneKit */;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = LuceneKit;
 		};
 /* End PBXContainerItemProxy section */
@@ -550,7 +527,7 @@
 		604A30390998D6160082342D /* LCField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCField.h; path = Document/LCField.h; sourceTree = "<group>"; };
 		604A303A0998D6160082342D /* LCNumberTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCNumberTools.h; path = Document/LCNumberTools.h; sourceTree = "<group>"; };
 		604A310A0998F4BB0082342D /* UnitKitInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = UnitKitInfo.plist; sourceTree = "<group>"; };
-		604A37CD0999FCF40082342D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		604A37CD0999FCF40082342D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		604A37CF0999FD140082342D /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60692FC008BFDE76009D3B3F /* LuceneKitTest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuceneKitTest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		609A9FC908D3A1190008B25B /* QueryHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryHandler.m; sourceTree = "<group>"; };
@@ -563,7 +540,6 @@
 		609A9FE908D3A2810008B25B /* LCWildcardTermEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWildcardTermEnum.m; sourceTree = "<group>"; };
 		609A9FEA08D3A2810008B25B /* LCWildcardQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWildcardQuery.m; sourceTree = "<group>"; };
 		609A9FEB08D3A2810008B25B /* TestWildcard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWildcard.m; sourceTree = "<group>"; };
-		609AA00508D3A4D60008B25B /* OgreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OgreKit.framework; path = /Library/Frameworks/OgreKit.framework; sourceTree = "<absolute>"; };
 		64C922B908B78AF100ACE251 /* UnitKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnitKit.framework; path = /Library/Frameworks/UnitKit.framework; sourceTree = "<absolute>"; };
 		64C9245408B78CCA00ACE251 /* LCAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCAnalyzer.m; sourceTree = "<group>"; };
 		64C9245508B78CCA00ACE251 /* LCCharTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCCharTokenizer.m; sourceTree = "<group>"; };
@@ -719,6 +695,7 @@
 		64C9250208B78CCB00ACE251 /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
 		64C9250308B78CCB00ACE251 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* LuceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LuceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D73A6EB0ED39A8F004AEBB9 /* LCMetadataAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMetadataAttribute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -767,7 +744,6 @@
 		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				609AA00508D3A4D60008B25B /* OgreKit.framework */,
 				64C922B908B78AF100ACE251 /* UnitKit.framework */,
 				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
 				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
@@ -1041,6 +1017,7 @@
 				64C9247308B78CCA00ACE251 /* Index */,
 				64C924A908B78CCA00ACE251 /* Java */,
 				64C924AD08B78CCA00ACE251 /* LCIndexManager.m */,
+				9D73A6EB0ED39A8F004AEBB9 /* LCMetadataAttribute.m */,
 				64C924AE08B78CCA00ACE251 /* QueryParser */,
 				64C924B108B78CCA00ACE251 /* Search */,
 				64C924EF08B78CCA00ACE251 /* Store */,
@@ -1497,57 +1474,12 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				INFOPLIST_FILE = "UnitKit-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OPTIMIZATION_CFLAGS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = UnitKit;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = "-Wmost";
-			};
 			dependencies = (
 				604A35150999D6270082342D /* PBXTargetDependency */,
 			);
 			name = LuceneKitTest;
 			productName = UnitKit;
 			productReference = 60692FC008BFDE76009D3B3F /* LuceneKitTest.bundle */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>UnitKit</string>
-	<key>CFBundleGetInfoString</key>
-	<string></string>
-	<key>CFBundleIconFile</key>
-	<string></string>
-	<key>CFBundleIdentifier</key>
-	<string>com.MySoftwareCompany.UnitKit</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string></string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0.0d1</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.bundle";
 		};
 		8DC2EF4F0486A6940098B216 /* LuceneKit */ = {
@@ -1561,23 +1493,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LuceneKit_Prefix.pch;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
-				LIBRARY_STYLE = DYNAMIC;
-				PREBINDING = NO;
-				PRODUCT_NAME = LuceneKit;
-				WRAPPER_EXTENSION = framework;
-			};
 			dependencies = (
 			);
 			name = LuceneKit;
@@ -1592,16 +1507,12 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 64C91B4808B783B900ACE251 /* Build configuration list for PBXProject "LuceneKit" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				014CEA440018CDF011CA2923 /* Debug */,
-				014CEA450018CDF011CA2923 /* Release */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 0867D691FE84028FC02AAC07 /* LuceneKit */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* LuceneKit */,
 				60692FBF08BFDE76009D3B3F /* LuceneKitTest */,
@@ -1826,6 +1737,7 @@
 				604A2C860998C2980082342D /* LCTopDocCollector.m in Sources */,
 				604A2C870998C2980082342D /* LCTopFieldDocCollector.m in Sources */,
 				604A2CA90998C3B70082342D /* LCSmallFloat.m in Sources */,
+				9D73A6EC0ED39A8F004AEBB9 /* LCMetadataAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1857,6 +1769,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -1864,14 +1777,11 @@
 				INFOPLIST_FILE = UnitKitInfo.plist;
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-lz",
-					"-framework",
-					OgreKit,
 					"-framework",
 					UnitKit,
 				);
@@ -1888,6 +1798,7 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -1895,14 +1806,11 @@
 				INFOPLIST_FILE = UnitKitInfo.plist;
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-lz",
-					"-framework",
-					OgreKit,
 					"-framework",
 					UnitKit,
 				);
@@ -1917,6 +1825,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)\"";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -1924,14 +1833,11 @@
 				INFOPLIST_FILE = UnitKitInfo.plist;
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-lz",
-					"-framework",
-					OgreKit,
 					"-framework",
 					UnitKit,
 				);
@@ -1959,14 +1865,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				OTHER_LDFLAGS = (
-					"-lz",
-					"-framework",
-					OgreKit,
-				);
+				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = LuceneKit;
@@ -1990,15 +1893,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				OTHER_LDFLAGS = (
-					"-lz",
-					"-framework",
-					OgreKit,
-				);
+				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = LuceneKit;
@@ -2020,14 +1919,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				OTHER_LDFLAGS = (
-					"-lz",
-					"-framework",
-					OgreKit,
-				);
+				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = LuceneKit;
