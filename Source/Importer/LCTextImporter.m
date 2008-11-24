@@ -15,9 +15,9 @@
 	NSDate *modificationDate = [attribs objectForKey: NSFileModificationDate];
 	if ([modificationDate isEqualToDate: [attributes objectForKey: LCContentModificationDateAttribute]] == NO)
 	{
-		[attributes setObject: [NSString stringWithCalendarDate: [modificationDate dateWithCalendarFormat: nil timeZone: nil] resolution: LCResolution_SECOND]
+		[attributes setObject: [NSString stringWithCalendarDate: [LCCalendarDate date:modificationDate withCalendarFormat: nil timeZone: nil] resolution: LCResolution_SECOND]
 					   forKey: LCContentModificationDateAttribute];
-		[attributes setObject: [NSString stringWithCalendarDate: [NSCalendarDate date] resolution: LCResolution_SECOND]
+		[attributes setObject: [NSString stringWithCalendarDate: [LCCalendarDate date] resolution: LCResolution_SECOND]
 					   forKey: LCMetadataChangeDateAttribute];
 		return YES;
 	}

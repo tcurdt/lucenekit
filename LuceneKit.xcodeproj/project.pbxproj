@@ -337,6 +337,8 @@
 		64C9265608B78CCB00ACE251 /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C9250208B78CCB00ACE251 /* NSData+Additions.m */; };
 		64C9265708B78CCB00ACE251 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C9250308B78CCB00ACE251 /* NSString+Additions.m */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		9D2F5BB00EDB0839002CF2D6 /* LCCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F5BAE0EDB0839002CF2D6 /* LCCalendarDate.m */; };
+		9D2F5C550EDB2295002CF2D6 /* LCCalendarDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D2F5C540EDB2295002CF2D6 /* LCCalendarDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D73A6EC0ED39A8F004AEBB9 /* LCMetadataAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D73A6EB0ED39A8F004AEBB9 /* LCMetadataAttribute.m */; };
 /* End PBXBuildFile section */
 
@@ -359,21 +361,21 @@
 		6047501408D19B5E000F2531 /* LCMetadataAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMetadataAttribute.h; sourceTree = "<group>"; };
 		604A2C820998C2980082342D /* LCTopDocCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTopDocCollector.m; sourceTree = "<group>"; };
 		604A2C830998C2980082342D /* LCTopFieldDocCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTopFieldDocCollector.m; sourceTree = "<group>"; };
-		604A2C880998C2B00082342D /* TestBooleanMinShouldMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBooleanMinShouldMatch.m; sourceTree = "<group>"; };
-		604A2C8A0998C2E40082342D /* TestDateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDateTools.m; sourceTree = "<group>"; };
-		604A2C8B0998C2E40082342D /* TestDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDocument.m; sourceTree = "<group>"; };
-		604A2C8E0998C2F90082342D /* TestAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnalyzer.h; sourceTree = "<group>"; };
-		604A2C8F0998C2F90082342D /* TestAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnalyzer.m; sourceTree = "<group>"; };
-		604A2C900998C2F90082342D /* TestSimpleAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSimpleAnalyzer.m; sourceTree = "<group>"; };
-		604A2C910998C2F90082342D /* TestStopAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStopAnalyzer.m; sourceTree = "<group>"; };
-		604A2C920998C2F90082342D /* TestWhitespaceAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWhitespaceAnalyzer.m; sourceTree = "<group>"; };
-		604A2C980998C32E0082342D /* TestSegmentReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSegmentReader.h; sourceTree = "<group>"; };
-		604A2C9B0998C36A0082342D /* TestStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringReader.m; sourceTree = "<group>"; };
-		604A2C9D0998C3A10082342D /* TestBitVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBitVector.m; sourceTree = "<group>"; };
-		604A2C9E0998C3A10082342D /* TestData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestData+Additions.m"; sourceTree = "<group>"; };
-		604A2C9F0998C3A10082342D /* TestPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPriorityQueue.m; sourceTree = "<group>"; };
-		604A2CA00998C3A10082342D /* TestSmallFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSmallFloat.m; sourceTree = "<group>"; };
-		604A2CA10998C3A10082342D /* TestString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestString+Additions.m"; sourceTree = "<group>"; };
+		604A2C880998C2B00082342D /* TestBooleanMinShouldMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestBooleanMinShouldMatch.m; path = Source/Search/TestBooleanMinShouldMatch.m; sourceTree = "<group>"; };
+		604A2C8A0998C2E40082342D /* TestDateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestDateTools.m; path = Source/Document/TestDateTools.m; sourceTree = "<group>"; };
+		604A2C8B0998C2E40082342D /* TestDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestDocument.m; path = Source/Document/TestDocument.m; sourceTree = "<group>"; };
+		604A2C8E0998C2F90082342D /* TestAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestAnalyzer.h; path = Source/Analysis/TestAnalyzer.h; sourceTree = "<group>"; };
+		604A2C8F0998C2F90082342D /* TestAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestAnalyzer.m; path = Source/Analysis/TestAnalyzer.m; sourceTree = "<group>"; };
+		604A2C900998C2F90082342D /* TestSimpleAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSimpleAnalyzer.m; path = Source/Analysis/TestSimpleAnalyzer.m; sourceTree = "<group>"; };
+		604A2C910998C2F90082342D /* TestStopAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestStopAnalyzer.m; path = Source/Analysis/TestStopAnalyzer.m; sourceTree = "<group>"; };
+		604A2C920998C2F90082342D /* TestWhitespaceAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestWhitespaceAnalyzer.m; path = Source/Analysis/TestWhitespaceAnalyzer.m; sourceTree = "<group>"; };
+		604A2C980998C32E0082342D /* TestSegmentReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSegmentReader.h; path = Source/Index/TestSegmentReader.h; sourceTree = "<group>"; };
+		604A2C9B0998C36A0082342D /* TestStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestStringReader.m; path = Source/Java/TestStringReader.m; sourceTree = "<group>"; };
+		604A2C9D0998C3A10082342D /* TestBitVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestBitVector.m; path = Source/Util/TestBitVector.m; sourceTree = "<group>"; };
+		604A2C9E0998C3A10082342D /* TestData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TestData+Additions.m"; path = "Source/Util/TestData+Additions.m"; sourceTree = "<group>"; };
+		604A2C9F0998C3A10082342D /* TestPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestPriorityQueue.m; path = Source/Util/TestPriorityQueue.m; sourceTree = "<group>"; };
+		604A2CA00998C3A10082342D /* TestSmallFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSmallFloat.m; path = Source/Util/TestSmallFloat.m; sourceTree = "<group>"; };
+		604A2CA10998C3A10082342D /* TestString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TestString+Additions.m"; path = "Source/Util/TestString+Additions.m"; sourceTree = "<group>"; };
 		604A2CA70998C3B70082342D /* LCSmallFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSmallFloat.m; sourceTree = "<group>"; };
 		604A2E5E0998CC570082342D /* LCBooleanClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBooleanClause.h; path = Search/LCBooleanClause.h; sourceTree = "<group>"; };
 		604A2E5F0998CC570082342D /* LCBooleanQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBooleanQuery.h; path = Search/LCBooleanQuery.h; sourceTree = "<group>"; };
@@ -539,7 +541,7 @@
 		609A9FD808D3A14E0008B25B /* CodeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeParser.h; sourceTree = "<group>"; };
 		609A9FE908D3A2810008B25B /* LCWildcardTermEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWildcardTermEnum.m; sourceTree = "<group>"; };
 		609A9FEA08D3A2810008B25B /* LCWildcardQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWildcardQuery.m; sourceTree = "<group>"; };
-		609A9FEB08D3A2810008B25B /* TestWildcard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWildcard.m; sourceTree = "<group>"; };
+		609A9FEB08D3A2810008B25B /* TestWildcard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestWildcard.m; path = Source/Search/TestWildcard.m; sourceTree = "<group>"; };
 		64C922B908B78AF100ACE251 /* UnitKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnitKit.framework; path = /Library/Frameworks/UnitKit.framework; sourceTree = "<absolute>"; };
 		64C9245408B78CCA00ACE251 /* LCAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCAnalyzer.m; sourceTree = "<group>"; };
 		64C9245508B78CCA00ACE251 /* LCCharTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCCharTokenizer.m; sourceTree = "<group>"; };
@@ -563,8 +565,8 @@
 		64C9246A08B78CCA00ACE251 /* LCDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCDocument.m; sourceTree = "<group>"; };
 		64C9246B08B78CCA00ACE251 /* LCField.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCField.m; sourceTree = "<group>"; };
 		64C9246C08B78CCA00ACE251 /* LCNumberTools.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCNumberTools.m; sourceTree = "<group>"; };
-		64C9246D08B78CCA00ACE251 /* TestBinaryDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestBinaryDocument.m; sourceTree = "<group>"; };
-		64C9246E08B78CCA00ACE251 /* TestNumberTools.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestNumberTools.m; sourceTree = "<group>"; };
+		64C9246D08B78CCA00ACE251 /* TestBinaryDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestBinaryDocument.m; path = Source/Document/TestBinaryDocument.m; sourceTree = "<group>"; };
+		64C9246E08B78CCA00ACE251 /* TestNumberTools.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestNumberTools.m; path = Source/Document/TestNumberTools.m; sourceTree = "<group>"; };
 		64C9247208B78CCA00ACE251 /* LCTextImporter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCTextImporter.m; sourceTree = "<group>"; };
 		64C9247608B78CCA00ACE251 /* LCCompoundFileReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCCompoundFileReader.m; sourceTree = "<group>"; };
 		64C9247708B78CCA00ACE251 /* LCCompoundFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCCompoundFileWriter.m; sourceTree = "<group>"; };
@@ -599,24 +601,24 @@
 		64C9249408B78CCA00ACE251 /* LCTermVectorOffsetInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCTermVectorOffsetInfo.m; sourceTree = "<group>"; };
 		64C9249508B78CCA00ACE251 /* LCTermVectorsReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCTermVectorsReader.m; sourceTree = "<group>"; };
 		64C9249608B78CCA00ACE251 /* LCTermVectorsWriter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCTermVectorsWriter.m; sourceTree = "<group>"; };
-		64C9249708B78CCA00ACE251 /* TestCompoundFile.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestCompoundFile.m; sourceTree = "<group>"; };
-		64C9249808B78CCA00ACE251 /* TestDocHelper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TestDocHelper.h; sourceTree = "<group>"; };
-		64C9249908B78CCA00ACE251 /* TestDocHelper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestDocHelper.m; sourceTree = "<group>"; };
-		64C9249A08B78CCA00ACE251 /* TestFieldsReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestFieldsReader.m; sourceTree = "<group>"; };
-		64C9249B08B78CCA00ACE251 /* TestFilterIndexReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestFilterIndexReader.m; sourceTree = "<group>"; };
-		64C9249C08B78CCA00ACE251 /* TestIndexModifier.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestIndexModifier.m; sourceTree = "<group>"; };
-		64C9249D08B78CCA00ACE251 /* TestIndexReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestIndexReader.m; sourceTree = "<group>"; };
-		64C9249E08B78CCA00ACE251 /* TestIndexWriter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestIndexWriter.m; sourceTree = "<group>"; };
-		64C9249F08B78CCA00ACE251 /* TestMockIndexInput.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestMockIndexInput.m; sourceTree = "<group>"; };
-		64C924A008B78CCA00ACE251 /* TestMockIndexOutput.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestMockIndexOutput.m; sourceTree = "<group>"; };
-		64C924A108B78CCA00ACE251 /* TestMultiReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestMultiReader.m; sourceTree = "<group>"; };
-		64C924A208B78CCA00ACE251 /* TestSegmentMerger.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestSegmentMerger.m; sourceTree = "<group>"; };
-		64C924A308B78CCA00ACE251 /* TestSegmentReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestSegmentReader.m; sourceTree = "<group>"; };
-		64C924A408B78CCA00ACE251 /* TestSegmentTermDocs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestSegmentTermDocs.m; sourceTree = "<group>"; };
-		64C924A508B78CCA00ACE251 /* TestSegmentTermEnum.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestSegmentTermEnum.m; sourceTree = "<group>"; };
-		64C924A608B78CCA00ACE251 /* TestTermInfos.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestTermInfos.m; sourceTree = "<group>"; };
-		64C924A708B78CCA00ACE251 /* TestTermVectorsReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestTermVectorsReader.m; sourceTree = "<group>"; };
-		64C924A808B78CCA00ACE251 /* TestTermVectorsWriter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestTermVectorsWriter.m; sourceTree = "<group>"; };
+		64C9249708B78CCA00ACE251 /* TestCompoundFile.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestCompoundFile.m; path = Source/Index/TestCompoundFile.m; sourceTree = "<group>"; };
+		64C9249808B78CCA00ACE251 /* TestDocHelper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TestDocHelper.h; path = Source/Index/TestDocHelper.h; sourceTree = "<group>"; };
+		64C9249908B78CCA00ACE251 /* TestDocHelper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestDocHelper.m; path = Source/Index/TestDocHelper.m; sourceTree = "<group>"; };
+		64C9249A08B78CCA00ACE251 /* TestFieldsReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestFieldsReader.m; path = Source/Index/TestFieldsReader.m; sourceTree = "<group>"; };
+		64C9249B08B78CCA00ACE251 /* TestFilterIndexReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestFilterIndexReader.m; path = Source/Index/TestFilterIndexReader.m; sourceTree = "<group>"; };
+		64C9249C08B78CCA00ACE251 /* TestIndexModifier.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestIndexModifier.m; path = Source/Index/TestIndexModifier.m; sourceTree = "<group>"; };
+		64C9249D08B78CCA00ACE251 /* TestIndexReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestIndexReader.m; path = Source/Index/TestIndexReader.m; sourceTree = "<group>"; };
+		64C9249E08B78CCA00ACE251 /* TestIndexWriter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestIndexWriter.m; path = Source/Index/TestIndexWriter.m; sourceTree = "<group>"; };
+		64C9249F08B78CCA00ACE251 /* TestMockIndexInput.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestMockIndexInput.m; path = Source/Index/TestMockIndexInput.m; sourceTree = "<group>"; };
+		64C924A008B78CCA00ACE251 /* TestMockIndexOutput.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestMockIndexOutput.m; path = Source/Index/TestMockIndexOutput.m; sourceTree = "<group>"; };
+		64C924A108B78CCA00ACE251 /* TestMultiReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestMultiReader.m; path = Source/Index/TestMultiReader.m; sourceTree = "<group>"; };
+		64C924A208B78CCA00ACE251 /* TestSegmentMerger.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestSegmentMerger.m; path = Source/Index/TestSegmentMerger.m; sourceTree = "<group>"; };
+		64C924A308B78CCA00ACE251 /* TestSegmentReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestSegmentReader.m; path = Source/Index/TestSegmentReader.m; sourceTree = "<group>"; };
+		64C924A408B78CCA00ACE251 /* TestSegmentTermDocs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestSegmentTermDocs.m; path = Source/Index/TestSegmentTermDocs.m; sourceTree = "<group>"; };
+		64C924A508B78CCA00ACE251 /* TestSegmentTermEnum.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestSegmentTermEnum.m; path = Source/Index/TestSegmentTermEnum.m; sourceTree = "<group>"; };
+		64C924A608B78CCA00ACE251 /* TestTermInfos.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestTermInfos.m; path = Source/Index/TestTermInfos.m; sourceTree = "<group>"; };
+		64C924A708B78CCA00ACE251 /* TestTermVectorsReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestTermVectorsReader.m; path = Source/Index/TestTermVectorsReader.m; sourceTree = "<group>"; };
+		64C924A808B78CCA00ACE251 /* TestTermVectorsWriter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestTermVectorsWriter.m; path = Source/Index/TestTermVectorsWriter.m; sourceTree = "<group>"; };
 		64C924AC08B78CCA00ACE251 /* LCStringReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCStringReader.m; sourceTree = "<group>"; };
 		64C924AD08B78CCA00ACE251 /* LCIndexManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCIndexManager.m; sourceTree = "<group>"; };
 		64C924B008B78CCA00ACE251 /* LCQueryParser.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCQueryParser.m; sourceTree = "<group>"; };
@@ -662,23 +664,23 @@
 		64C924DB08B78CCA00ACE251 /* LCTermScorer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCTermScorer.m; sourceTree = "<group>"; };
 		64C924DC08B78CCA00ACE251 /* LCTopDocs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCTopDocs.m; sourceTree = "<group>"; };
 		64C924DD08B78CCA00ACE251 /* LCTopFieldDocs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCTopFieldDocs.m; sourceTree = "<group>"; };
-		64C924DE08B78CCA00ACE251 /* TestBoolean2.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestBoolean2.m; sourceTree = "<group>"; };
-		64C924DF08B78CCA00ACE251 /* TestBooleanOr.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestBooleanOr.m; sourceTree = "<group>"; };
-		64C924E008B78CCA00ACE251 /* TestBooleanQuery.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestBooleanQuery.m; sourceTree = "<group>"; };
-		64C924E108B78CCA00ACE251 /* TestBooleanScorer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestBooleanScorer.m; sourceTree = "<group>"; };
-		64C924E208B78CCA00ACE251 /* TestCheckHits.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TestCheckHits.h; sourceTree = "<group>"; };
-		64C924E308B78CCA00ACE251 /* TestCheckHits.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestCheckHits.m; sourceTree = "<group>"; };
-		64C924E408B78CCA00ACE251 /* TestDocBoost.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestDocBoost.m; sourceTree = "<group>"; };
-		64C924E508B78CCA00ACE251 /* TestEnglish.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TestEnglish.h; sourceTree = "<group>"; };
-		64C924E608B78CCA00ACE251 /* TestEnglish.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestEnglish.m; sourceTree = "<group>"; };
-		64C924E708B78CCA00ACE251 /* TestFuzzyQuery.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestFuzzyQuery.m; sourceTree = "<group>"; };
-		64C924E808B78CCA00ACE251 /* TestNot.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestNot.m; sourceTree = "<group>"; };
-		64C924E908B78CCA00ACE251 /* TestPrefixQuery.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestPrefixQuery.m; sourceTree = "<group>"; };
-		64C924EA08B78CCA00ACE251 /* TestQueryTermVector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestQueryTermVector.m; sourceTree = "<group>"; };
-		64C924EB08B78CCA00ACE251 /* TestSetNorm.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestSetNorm.m; sourceTree = "<group>"; };
-		64C924EC08B78CCA00ACE251 /* TestSimilarity.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestSimilarity.m; sourceTree = "<group>"; };
-		64C924ED08B78CCA00ACE251 /* TestSort.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestSort.m; sourceTree = "<group>"; };
-		64C924EE08B78CCA00ACE251 /* TestTermVectors.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestTermVectors.m; sourceTree = "<group>"; };
+		64C924DE08B78CCA00ACE251 /* TestBoolean2.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestBoolean2.m; path = Source/Search/TestBoolean2.m; sourceTree = "<group>"; };
+		64C924DF08B78CCA00ACE251 /* TestBooleanOr.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestBooleanOr.m; path = Source/Search/TestBooleanOr.m; sourceTree = "<group>"; };
+		64C924E008B78CCA00ACE251 /* TestBooleanQuery.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestBooleanQuery.m; path = Source/Search/TestBooleanQuery.m; sourceTree = "<group>"; };
+		64C924E108B78CCA00ACE251 /* TestBooleanScorer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestBooleanScorer.m; path = Source/Search/TestBooleanScorer.m; sourceTree = "<group>"; };
+		64C924E208B78CCA00ACE251 /* TestCheckHits.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TestCheckHits.h; path = Source/Search/TestCheckHits.h; sourceTree = "<group>"; };
+		64C924E308B78CCA00ACE251 /* TestCheckHits.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestCheckHits.m; path = Source/Search/TestCheckHits.m; sourceTree = "<group>"; };
+		64C924E408B78CCA00ACE251 /* TestDocBoost.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestDocBoost.m; path = Source/Search/TestDocBoost.m; sourceTree = "<group>"; };
+		64C924E508B78CCA00ACE251 /* TestEnglish.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TestEnglish.h; path = Source/Search/TestEnglish.h; sourceTree = "<group>"; };
+		64C924E608B78CCA00ACE251 /* TestEnglish.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestEnglish.m; path = Source/Search/TestEnglish.m; sourceTree = "<group>"; };
+		64C924E708B78CCA00ACE251 /* TestFuzzyQuery.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestFuzzyQuery.m; path = Source/Search/TestFuzzyQuery.m; sourceTree = "<group>"; };
+		64C924E808B78CCA00ACE251 /* TestNot.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestNot.m; path = Source/Search/TestNot.m; sourceTree = "<group>"; };
+		64C924E908B78CCA00ACE251 /* TestPrefixQuery.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestPrefixQuery.m; path = Source/Search/TestPrefixQuery.m; sourceTree = "<group>"; };
+		64C924EA08B78CCA00ACE251 /* TestQueryTermVector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestQueryTermVector.m; path = Source/Search/TestQueryTermVector.m; sourceTree = "<group>"; };
+		64C924EB08B78CCA00ACE251 /* TestSetNorm.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestSetNorm.m; path = Source/Search/TestSetNorm.m; sourceTree = "<group>"; };
+		64C924EC08B78CCA00ACE251 /* TestSimilarity.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestSimilarity.m; path = Source/Search/TestSimilarity.m; sourceTree = "<group>"; };
+		64C924ED08B78CCA00ACE251 /* TestSort.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestSort.m; path = Source/Search/TestSort.m; sourceTree = "<group>"; };
+		64C924EE08B78CCA00ACE251 /* TestTermVectors.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestTermVectors.m; path = Source/Search/TestTermVectors.m; sourceTree = "<group>"; };
 		64C924F208B78CCA00ACE251 /* LCFSDirectory.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCFSDirectory.m; sourceTree = "<group>"; };
 		64C924F308B78CCA00ACE251 /* LCFSIndexInput.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCFSIndexInput.m; sourceTree = "<group>"; };
 		64C924F408B78CCA00ACE251 /* LCFSIndexOutput.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCFSIndexOutput.m; sourceTree = "<group>"; };
@@ -689,12 +691,14 @@
 		64C924F908B78CCA00ACE251 /* LCRAMFile.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCRAMFile.m; sourceTree = "<group>"; };
 		64C924FA08B78CCA00ACE251 /* LCRAMInputStream.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCRAMInputStream.m; sourceTree = "<group>"; };
 		64C924FB08B78CCA00ACE251 /* LCRAMOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCRAMOutputStream.m; sourceTree = "<group>"; };
-		64C924FC08B78CCA00ACE251 /* TestStore.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestStore.m; sourceTree = "<group>"; };
+		64C924FC08B78CCA00ACE251 /* TestStore.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TestStore.m; path = Source/Store/TestStore.m; sourceTree = "<group>"; };
 		64C9250008B78CCB00ACE251 /* LCBitVector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCBitVector.m; sourceTree = "<group>"; };
 		64C9250108B78CCB00ACE251 /* LCPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCPriorityQueue.m; sourceTree = "<group>"; };
 		64C9250208B78CCB00ACE251 /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
 		64C9250308B78CCB00ACE251 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* LuceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LuceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2F5BAE0EDB0839002CF2D6 /* LCCalendarDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCalendarDate.m; sourceTree = "<group>"; };
+		9D2F5C540EDB2295002CF2D6 /* LCCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCCalendarDate.h; path = Util/LCCalendarDate.h; sourceTree = "<group>"; };
 		9D73A6EB0ED39A8F004AEBB9 /* LCMetadataAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMetadataAttribute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -764,6 +768,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9D1B6AB30ED9CF0E00BDEE89 /* Tests */,
 				64C9244F08B78CCA00ACE251 /* Source */,
 				64C9250408B78CCB00ACE251 /* Headers */,
 				604A2FF50998D5B40082342D /* GNUstep.h */,
@@ -877,6 +882,7 @@
 		604A2F270998CCA00082342D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				9D2F5C540EDB2295002CF2D6 /* LCCalendarDate.h */,
 				604A2F280998CCB30082342D /* LCBitVector.h */,
 				604A2F290998CCB30082342D /* LCPriorityQueue.h */,
 				604A2F2A0998CCB30082342D /* LCSmallFloat.h */,
@@ -1047,11 +1053,6 @@
 				64C9246308B78CCA00ACE251 /* LCWhitespaceTokenizer.m */,
 				64C9246408B78CCA00ACE251 /* LCWordlistLoader.m */,
 				64C9246508B78CCA00ACE251 /* PorterStemmer.c */,
-				604A2C8E0998C2F90082342D /* TestAnalyzer.h */,
-				604A2C8F0998C2F90082342D /* TestAnalyzer.m */,
-				604A2C900998C2F90082342D /* TestSimpleAnalyzer.m */,
-				604A2C910998C2F90082342D /* TestStopAnalyzer.m */,
-				604A2C920998C2F90082342D /* TestWhitespaceAnalyzer.m */,
 			);
 			path = Analysis;
 			sourceTree = "<group>";
@@ -1063,10 +1064,6 @@
 				64C9246A08B78CCA00ACE251 /* LCDocument.m */,
 				64C9246B08B78CCA00ACE251 /* LCField.m */,
 				64C9246C08B78CCA00ACE251 /* LCNumberTools.m */,
-				64C9246D08B78CCA00ACE251 /* TestBinaryDocument.m */,
-				604A2C8A0998C2E40082342D /* TestDateTools.m */,
-				604A2C8B0998C2E40082342D /* TestDocument.m */,
-				64C9246E08B78CCA00ACE251 /* TestNumberTools.m */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -1115,25 +1112,6 @@
 				64C9249408B78CCA00ACE251 /* LCTermVectorOffsetInfo.m */,
 				64C9249508B78CCA00ACE251 /* LCTermVectorsReader.m */,
 				64C9249608B78CCA00ACE251 /* LCTermVectorsWriter.m */,
-				64C9249708B78CCA00ACE251 /* TestCompoundFile.m */,
-				64C9249808B78CCA00ACE251 /* TestDocHelper.h */,
-				64C9249908B78CCA00ACE251 /* TestDocHelper.m */,
-				64C9249A08B78CCA00ACE251 /* TestFieldsReader.m */,
-				64C9249B08B78CCA00ACE251 /* TestFilterIndexReader.m */,
-				64C9249C08B78CCA00ACE251 /* TestIndexModifier.m */,
-				64C9249D08B78CCA00ACE251 /* TestIndexReader.m */,
-				64C9249E08B78CCA00ACE251 /* TestIndexWriter.m */,
-				64C9249F08B78CCA00ACE251 /* TestMockIndexInput.m */,
-				64C924A008B78CCA00ACE251 /* TestMockIndexOutput.m */,
-				64C924A108B78CCA00ACE251 /* TestMultiReader.m */,
-				64C924A208B78CCA00ACE251 /* TestSegmentMerger.m */,
-				604A2C980998C32E0082342D /* TestSegmentReader.h */,
-				64C924A308B78CCA00ACE251 /* TestSegmentReader.m */,
-				64C924A408B78CCA00ACE251 /* TestSegmentTermDocs.m */,
-				64C924A508B78CCA00ACE251 /* TestSegmentTermEnum.m */,
-				64C924A608B78CCA00ACE251 /* TestTermInfos.m */,
-				64C924A708B78CCA00ACE251 /* TestTermVectorsReader.m */,
-				64C924A808B78CCA00ACE251 /* TestTermVectorsWriter.m */,
 			);
 			path = Index;
 			sourceTree = "<group>";
@@ -1142,7 +1120,6 @@
 			isa = PBXGroup;
 			children = (
 				64C924AC08B78CCA00ACE251 /* LCStringReader.m */,
-				604A2C9B0998C36A0082342D /* TestStringReader.m */,
 			);
 			path = Java;
 			sourceTree = "<group>";
@@ -1165,7 +1142,6 @@
 		64C924B108B78CCA00ACE251 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				604A2C880998C2B00082342D /* TestBooleanMinShouldMatch.m */,
 				64C924B408B78CCA00ACE251 /* LCBooleanClause.m */,
 				64C924B508B78CCA00ACE251 /* LCBooleanQuery.m */,
 				64C924B608B78CCA00ACE251 /* LCBooleanScorer.m */,
@@ -1212,24 +1188,6 @@
 				64C924DD08B78CCA00ACE251 /* LCTopFieldDocs.m */,
 				609A9FE908D3A2810008B25B /* LCWildcardTermEnum.m */,
 				609A9FEA08D3A2810008B25B /* LCWildcardQuery.m */,
-				64C924DE08B78CCA00ACE251 /* TestBoolean2.m */,
-				64C924DF08B78CCA00ACE251 /* TestBooleanOr.m */,
-				64C924E008B78CCA00ACE251 /* TestBooleanQuery.m */,
-				64C924E108B78CCA00ACE251 /* TestBooleanScorer.m */,
-				64C924E208B78CCA00ACE251 /* TestCheckHits.h */,
-				64C924E308B78CCA00ACE251 /* TestCheckHits.m */,
-				64C924E408B78CCA00ACE251 /* TestDocBoost.m */,
-				64C924E508B78CCA00ACE251 /* TestEnglish.h */,
-				64C924E608B78CCA00ACE251 /* TestEnglish.m */,
-				64C924E708B78CCA00ACE251 /* TestFuzzyQuery.m */,
-				64C924E808B78CCA00ACE251 /* TestNot.m */,
-				64C924E908B78CCA00ACE251 /* TestPrefixQuery.m */,
-				64C924EA08B78CCA00ACE251 /* TestQueryTermVector.m */,
-				64C924EB08B78CCA00ACE251 /* TestSetNorm.m */,
-				64C924EC08B78CCA00ACE251 /* TestSimilarity.m */,
-				64C924ED08B78CCA00ACE251 /* TestSort.m */,
-				64C924EE08B78CCA00ACE251 /* TestTermVectors.m */,
-				609A9FEB08D3A2810008B25B /* TestWildcard.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1247,7 +1205,6 @@
 				64C924F908B78CCA00ACE251 /* LCRAMFile.m */,
 				64C924FA08B78CCA00ACE251 /* LCRAMInputStream.m */,
 				64C924FB08B78CCA00ACE251 /* LCRAMOutputStream.m */,
-				64C924FC08B78CCA00ACE251 /* TestStore.m */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -1260,11 +1217,7 @@
 				604A2CA70998C3B70082342D /* LCSmallFloat.m */,
 				64C9250208B78CCB00ACE251 /* NSData+Additions.m */,
 				64C9250308B78CCB00ACE251 /* NSString+Additions.m */,
-				604A2C9D0998C3A10082342D /* TestBitVector.m */,
-				604A2C9E0998C3A10082342D /* TestData+Additions.m */,
-				604A2C9F0998C3A10082342D /* TestPriorityQueue.m */,
-				604A2CA00998C3A10082342D /* TestSmallFloat.m */,
-				604A2CA10998C3A10082342D /* TestString+Additions.m */,
+				9D2F5BAE0EDB0839002CF2D6 /* LCCalendarDate.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1286,6 +1239,67 @@
 				604A2F3B0998CCC40082342D /* Store */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		9D1B6AB30ED9CF0E00BDEE89 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				604A2C9B0998C36A0082342D /* TestStringReader.m */,
+				64C9249708B78CCA00ACE251 /* TestCompoundFile.m */,
+				64C9249808B78CCA00ACE251 /* TestDocHelper.h */,
+				64C9249908B78CCA00ACE251 /* TestDocHelper.m */,
+				64C9249A08B78CCA00ACE251 /* TestFieldsReader.m */,
+				64C9249B08B78CCA00ACE251 /* TestFilterIndexReader.m */,
+				64C9249C08B78CCA00ACE251 /* TestIndexModifier.m */,
+				64C9249D08B78CCA00ACE251 /* TestIndexReader.m */,
+				64C9249E08B78CCA00ACE251 /* TestIndexWriter.m */,
+				64C9249F08B78CCA00ACE251 /* TestMockIndexInput.m */,
+				64C924A008B78CCA00ACE251 /* TestMockIndexOutput.m */,
+				64C924A108B78CCA00ACE251 /* TestMultiReader.m */,
+				64C924A208B78CCA00ACE251 /* TestSegmentMerger.m */,
+				604A2C980998C32E0082342D /* TestSegmentReader.h */,
+				64C924A308B78CCA00ACE251 /* TestSegmentReader.m */,
+				64C924A408B78CCA00ACE251 /* TestSegmentTermDocs.m */,
+				64C924A508B78CCA00ACE251 /* TestSegmentTermEnum.m */,
+				64C924A608B78CCA00ACE251 /* TestTermInfos.m */,
+				64C924A708B78CCA00ACE251 /* TestTermVectorsReader.m */,
+				64C924A808B78CCA00ACE251 /* TestTermVectorsWriter.m */,
+				604A2C8E0998C2F90082342D /* TestAnalyzer.h */,
+				604A2C8F0998C2F90082342D /* TestAnalyzer.m */,
+				604A2C900998C2F90082342D /* TestSimpleAnalyzer.m */,
+				604A2C910998C2F90082342D /* TestStopAnalyzer.m */,
+				604A2C920998C2F90082342D /* TestWhitespaceAnalyzer.m */,
+				64C9246D08B78CCA00ACE251 /* TestBinaryDocument.m */,
+				604A2C8A0998C2E40082342D /* TestDateTools.m */,
+				604A2C8B0998C2E40082342D /* TestDocument.m */,
+				64C9246E08B78CCA00ACE251 /* TestNumberTools.m */,
+				604A2C880998C2B00082342D /* TestBooleanMinShouldMatch.m */,
+				64C924DE08B78CCA00ACE251 /* TestBoolean2.m */,
+				64C924DF08B78CCA00ACE251 /* TestBooleanOr.m */,
+				64C924E008B78CCA00ACE251 /* TestBooleanQuery.m */,
+				64C924E108B78CCA00ACE251 /* TestBooleanScorer.m */,
+				64C924E208B78CCA00ACE251 /* TestCheckHits.h */,
+				64C924E308B78CCA00ACE251 /* TestCheckHits.m */,
+				64C924E408B78CCA00ACE251 /* TestDocBoost.m */,
+				64C924E508B78CCA00ACE251 /* TestEnglish.h */,
+				64C924E608B78CCA00ACE251 /* TestEnglish.m */,
+				64C924E708B78CCA00ACE251 /* TestFuzzyQuery.m */,
+				64C924E808B78CCA00ACE251 /* TestNot.m */,
+				64C924E908B78CCA00ACE251 /* TestPrefixQuery.m */,
+				64C924EA08B78CCA00ACE251 /* TestQueryTermVector.m */,
+				64C924EB08B78CCA00ACE251 /* TestSetNorm.m */,
+				64C924EC08B78CCA00ACE251 /* TestSimilarity.m */,
+				64C924ED08B78CCA00ACE251 /* TestSort.m */,
+				64C924EE08B78CCA00ACE251 /* TestTermVectors.m */,
+				609A9FEB08D3A2810008B25B /* TestWildcard.m */,
+				64C924FC08B78CCA00ACE251 /* TestStore.m */,
+				604A2C9D0998C3A10082342D /* TestBitVector.m */,
+				604A2C9E0998C3A10082342D /* TestData+Additions.m */,
+				604A2C9F0998C3A10082342D /* TestPriorityQueue.m */,
+				604A2CA00998C3A10082342D /* TestSmallFloat.m */,
+				604A2CA10998C3A10082342D /* TestString+Additions.m */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1456,6 +1470,7 @@
 				604A303D0998D6160082342D /* LCDocument.h in Headers */,
 				604A303E0998D6160082342D /* LCField.h in Headers */,
 				604A303F0998D6160082342D /* LCNumberTools.h in Headers */,
+				9D2F5C550EDB2295002CF2D6 /* LCCalendarDate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1738,6 +1753,7 @@
 				604A2C870998C2980082342D /* LCTopFieldDocCollector.m in Sources */,
 				604A2CA90998C3B70082342D /* LCSmallFloat.m in Sources */,
 				9D73A6EC0ED39A8F004AEBB9 /* LCMetadataAttribute.m in Sources */,
+				9D2F5BB00EDB0839002CF2D6 /* LCCalendarDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

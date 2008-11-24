@@ -20,7 +20,7 @@
 /** convert a date to string in this format depending on resolution:
  * "%Y%m%d%H%M%S%F" (yyyyMMddHHmmssSSS) in GMT.
  */
-+ (id) stringWithCalendarDate: (NSCalendarDate *) date
++ (id) stringWithCalendarDate: (LCCalendarDate *) date
                    resolution: (LCResolution) res;
 {
 	return [NSString stringWithTimeIntervalSince1970: [date timeIntervalSince1970]
@@ -34,12 +34,12 @@
                             resolution: (LCResolution) resolution;
 {
 	NSTimeInterval interval;
-	NSCalendarDate *date;
+	LCCalendarDate *date;
 	NSString *pattern;
-	date = [NSCalendarDate dateWithTimeIntervalSince1970: time];
+	date = [LCCalendarDate dateWithTimeIntervalSince1970: time];
 	interval = [date timeIntervalSince1970WithResolution: resolution];
-	date = [NSCalendarDate dateWithTimeIntervalSince1970: interval];
-	/* Make sure date is in GMT format */
+	date = [LCCalendarDate dateWithTimeIntervalSince1970: interval];
+	// Make sure date is in GMT format
 	[date setTimeZone: [NSTimeZone timeZoneWithAbbreviation: @"GMT"]];
 	
 	if (resolution == LCResolution_YEAR) {
@@ -81,7 +81,7 @@
 /* Convert a string in this format to date:
  * "%Y%m%d%H%M%S%F" (yyyyMMddHHmmssSSS) in GMT.
  */
-- (NSCalendarDate *) calendarDate;
+- (LCCalendarDate *) calendarDate;
 {
 	NSString *pattern = nil;
 	int len = [self length];
@@ -113,97 +113,10 @@
 	}
 	
 	/* make sure the string is in GMT format */
-	return [NSCalendarDate dateWithString: [self stringByAppendingString:@"GMT"] 
+	return [LCCalendarDate dateWithString: [self stringByAppendingString:@"GMT"] 
                                calendarFormat: pattern];
 }
 
 @end
 
-@implementation NSCalendarDate (LuceneKit_Document_Date)
-
-/**
-* Limit a date's resolution. For example, the date <code>1095767411000</code>
- * (which represents 2004-09-21 13:50:11) will be changed to 
- * <code>1093989600000</code> (2004-09-01 00:00:00) when using
- * <code>Resolution.MONTH</code>.
- * 
- * @param resolution The desired resolution of the date to be returned
- * @return the date with all values more precise than <code>resolution</code>
- *  set to 0 or 1, expressed as milliseconds since January 1, 1970, 00:00:00 GMT
- */
-- (NSTimeInterval) timeIntervalSince1970WithResolution: (LCResolution) res
-{
-	return [[self dateWithResolution: res] timeIntervalSince1970];
-}
-
-/**
-* Limit a date's resolution. For example, the date <code>2004-09-21 13:50:11</code>
- * will be changed to <code>2004-09-01 00:00:00</code> when using
- * <code>Resolution.MONTH</code>. 
- * 
- * @param resolution The desired resolution of the date to be returned
- * @return the date with all values more precise than <code>resolution</code>
- *  set to 0 or 1
- */
-- (NSCalendarDate *) dateWithResolution: (LCResolution) res
-{
-	switch(res)
-	{
-		case LCResolution_YEAR:
-			return [NSCalendarDate dateWithYear: [self yearOfCommonEra]
-										  month: 1
-											day: 1
-										   hour: 0
-										 minute: 0
-										 second: 0
-									   timeZone: [self timeZone]];
-		case LCResolution_MONTH:
-			return [NSCalendarDate dateWithYear: [self yearOfCommonEra]
-										  month: [self monthOfYear]
-											day: 1
-										   hour: 0
-										 minute: 0
-										 second: 0
-									   timeZone: [self timeZone]];
-		case LCResolution_DAY:
-			return [NSCalendarDate dateWithYear: [self yearOfCommonEra]
-										  month: [self monthOfYear]
-											day: [self dayOfMonth]
-										   hour: 0
-										 minute: 0
-										 second: 0
-									   timeZone: [self timeZone]];
-		case LCResolution_HOUR:
-			return [NSCalendarDate dateWithYear: [self yearOfCommonEra]
-										  month: [self monthOfYear]
-											day: [self dayOfMonth]
-										   hour: [self hourOfDay]
-										 minute: 0
-										 second: 0
-									   timeZone: [self timeZone]];
-		case LCResolution_MINUTE:
-			return [NSCalendarDate dateWithYear: [self yearOfCommonEra]
-										  month: [self monthOfYear]
-											day: [self dayOfMonth]
-										   hour: [self hourOfDay]
-										 minute: [self minuteOfHour]
-										 second: 0
-									   timeZone: [self timeZone]];
-		case LCResolution_SECOND: 
-			return [NSCalendarDate dateWithYear: [self yearOfCommonEra]
-										  month: [self monthOfYear]
-											day: [self dayOfMonth]
-										   hour: [self hourOfDay]
-										 minute: [self minuteOfHour]
-										 second: [self secondOfMinute]
-									   timeZone: [self timeZone]];
-		case LCResolution_MILLISECOND:
-			return AUTORELEASE([self copy]);
-			// don't cut off anything
-		default:
-			return nil; // Error;
-	}
-}
-
-@end
 

@@ -1,5 +1,5 @@
 .DS_Store
-/build
+build
 *~.nib
 *.mode1v3
 *.mode1
