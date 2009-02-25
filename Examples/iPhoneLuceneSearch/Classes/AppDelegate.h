@@ -2,6 +2,7 @@
 #import "LuceneKit.h"
 
 @interface AppDelegate : NSObject <UIApplicationDelegate, UISearchBarDelegate> {
+
     UIWindow *window;
     UISearchBar *searchBar;
     UILabel *resultField;

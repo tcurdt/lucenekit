@@ -138,6 +138,7 @@
 		9D2F60160EDB2D48002CF2D6 /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F5EF40EDB2D48002CF2D6 /* NSData+Additions.m */; };
 		9D2F60170EDB2D48002CF2D6 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F5EF50EDB2D48002CF2D6 /* NSString+Additions.m */; };
 		9D2F60180EDB2D48002CF2D6 /* LCCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F5EF60EDB2D48002CF2D6 /* LCCalendarDate.m */; };
+		9DAFE2B90F55F3E000D020D8 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DAFE2B80F55F3E000D020D8 /* data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -435,6 +436,7 @@
 		9D2F5F990EDB2D48002CF2D6 /* LCRAMOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCRAMOutputStream.h; path = ../../Headers/Store/LCRAMOutputStream.h; sourceTree = SOURCE_ROOT; };
 		9D2F5F9A0EDB2D48002CF2D6 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Store.h; path = ../../Headers/Store/Store.h; sourceTree = SOURCE_ROOT; };
 		9D2F5F9B0EDB2D48002CF2D6 /* GNUstep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNUstep.h; path = ../../Headers/GNUstep/GNUstep.h; sourceTree = SOURCE_ROOT; };
+		9DAFE2B80F55F3E000D020D8 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.txt; path = ../data.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,6 +495,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9DAFE2B80F55F3E000D020D8 /* data.txt */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
@@ -1023,6 +1026,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				9DAFE2B90F55F3E000D020D8 /* data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
